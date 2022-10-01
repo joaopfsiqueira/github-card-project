@@ -9,10 +9,10 @@ async function apiReturnUsers(params) {
       };
   
     const result = await axios(config);
-    return result.data;
+    return result.data
     }catch(error) {
-      return error.response.data;
+      return error
     };
   }
   
-   module.exports = {apiReturnUsers}
+   module.exports = apiReturnUsers
